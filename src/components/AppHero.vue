@@ -1,17 +1,15 @@
 <script>
-    export default {
-        data() {
-            return {
-
-            }
-        }
-    }
+    
 </script>
 
 <template>
     <div class="ms_container">
+
+        <!-- DARK BACKGROUND -->
         <div class="ms_dark-background">
+
             <div class="ms_inner-container">
+
                 <!-- LITTLE TITLE -->
                 <div class="ms_lil-title">FIND THE BEST ANIMAL SUPPLIES</div>
 
@@ -20,8 +18,11 @@
 
                 <!-- BUTTON -->
                 <div class="btn-container"><input type="button" class="btn" value="Learn more about us"></div>
+                
             </div>
+
         </div>
+
     </div>
 </template>
 

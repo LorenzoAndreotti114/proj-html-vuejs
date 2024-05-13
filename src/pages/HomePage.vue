@@ -1,11 +1,14 @@
 <script>
 
     import AppHero from '../components/AppHero.vue';
+    import AppDiscount from '../components/AppDiscount.vue';
+    
 
     export default {
 
         components: {
             AppHero,
+            AppDiscount,
         },
 
         data() {
@@ -24,9 +27,7 @@
         <AppHero />
 
         <!-- DISCOUNT -->
-        <div>
-
-        </div>
+        <AppDiscount />
 
         <!-- BROWSE BY CATEGORY -->
         <div>
@@ -121,7 +122,6 @@
 
     .ms_container {
         width: 100%;
-        background-color: brown;
         border: 1px solid black;
     }
 
