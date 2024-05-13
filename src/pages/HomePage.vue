@@ -2,6 +2,7 @@
 
     import AppHero from '../components/AppHero.vue';
     import AppDiscount from '../components/AppDiscount.vue';
+    import AppBrowseCategory from '../components/AppBrowseCategory.vue';
     
 
     export default {
@@ -9,6 +10,7 @@
         components: {
             AppHero,
             AppDiscount,
+            AppBrowseCategory,
         },
 
         data() {
@@ -30,24 +32,7 @@
         <AppDiscount />
 
         <!-- BROWSE BY CATEGORY -->
-        <div>
-
-            <!-- TITLE -->
-            <div>
-
-            </div>
-
-            <!-- LITTLE CARDS -->
-            <div>
-
-            </div>
-
-            <!-- BIG CARDS -->
-            <div>
-
-            </div>
-
-        </div>
+        <AppBrowseCategory />
 
         <!-- NEW ARRIVALS BANNER -->
         <div>
