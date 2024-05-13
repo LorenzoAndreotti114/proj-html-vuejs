@@ -1,5 +1,13 @@
 <script>
+
+    import AppHero from '../components/AppHero.vue';
+
     export default {
+
+        components: {
+            AppHero,
+        },
+
         data() {
             return {
 
@@ -13,9 +21,7 @@
     <div class="ms_container">
         
         <!-- HERO -->
-        <div>
-
-        </div>
+        <AppHero />
 
         <!-- DISCOUNT -->
         <div>
@@ -115,6 +121,8 @@
 
     .ms_container {
         width: 100%;
+        background-color: brown;
+        border: 1px solid black;
     }
 
 </style>
