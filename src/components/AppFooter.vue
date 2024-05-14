@@ -1,6 +1,15 @@
 <script>
 export default {
-    name: 'AppFooter'
+  name: 'AppFooter',
+  data() {
+    return {
+      routes: [
+        { title: "Home", name: "Home" },
+        { title: "About", name: "About" },
+        { title: "Contact", name: "Contact" },
+      ]
+    }
+  },
 }
 </script>
 
@@ -47,7 +56,8 @@ export default {
                 <div class="col-md-3">
                     <div class="card text-white" style="background-color: #273F29;">
                         <div class="card-overlay"
-                            style="background-image: url('https://avada.website/pet-supplies/wp-content/uploads/sites/139/2020/04/bg-transparent-3.png'); background-size: cover;">
+                            style="background-image: url('https://avada.website/pet-supplies/wp-content/uploads/sites/139/2020/04/bg-transparent-3.png');
+                                    background-size: cover;">
                             <div class="card-body">
                                 <h1>Subscribe to Our Newsletter</h1>
                                 <input type="email" class="form-control mb-2" placeholder="Inserisci la tua email...">
@@ -121,12 +131,14 @@ export default {
             <!-- /TERZA PARTE DEL FOOTER -->
         </div>
     </footer>
+    <!-- BLACK FOOTER -->
     <footer class="footer bg-black text-white text-center py-4">
         <div class="container">
             <p class="mb-0">© Copyright 2012 - 2024 | Avada Website Builder by ThemeFusion | All Rights Reserved |
                 Powered by WordPress</p>
         </div>
     </footer>
+    <!-- /BLACK FOOTER -->
 
 </template>
 
