@@ -19,18 +19,22 @@
             <!-- paragraph -->
             <p class="two-columns">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non voluptates temporibus eligendi eius beatae dignissimos cupiditate est nam possimus inventore consequuntur accusamus quae labore culpa exercitationem, ea quas? Harum, ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsum amet aliquid, reprehenderit eum doloribus nemo rerum maiores, quisquam ducimus provident nihil l ullam veritatis! Consectetur quisquam non expedita vero Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quasi fuga neque exercitationem autem, illum maxime doloremque in, fugit laboriosam nihil! Voluptate, asperiores! Velit repudiandae rem veritatis! Nesciunt, aut ad.lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo nemo suscipit ea reprehenderit ipsam vel nulla, consequatur officia quam soluta autem sapiente officiis nostrum totam rerum aliquam temporibus deleniti perspiciatis?</p>
                 
-        </div>
         
-        <!-- signature section -->
-        </section>
+        
+            
 
-            <!-- signature container -->
+            <!-- signature -->
             <div class="signature">
 
                 <!-- img  -->
                 <img src="../assets/img/signature.jpg" alt="Signature">
 
             </div>
+        </div>
+    </section>
+
+ 
+        
 
 </template>
 
@@ -44,7 +48,8 @@
         background-color: #fff;
 
             img {
-                width: 25%;
+                width: 35%;
+                margin-left: 10vw;
             }
 
             div {
@@ -61,11 +66,15 @@
                 margin: 5vw;
                 }            
             }
-
-        .signature {
-                margin-top: 5vw;               
+            .signature img {
+                
+                margin-left: 10vw;               
                                 
         }
+
+
     }  
+
+
 
 </style>

@@ -13,16 +13,15 @@
 
         <!-- button -->
         <button>Visit our shop</button>
-        
+
     </section>
 </template>
 
 
 <style>
     .sticky-background-section {
-        position: sticky;
-        top: 0; 
-        background-image: url('../assets/img/signature.jpg'); 
+        position: sticky; 
+        background-image: url('../assets/img/HomepageHeroBigImg.jpg'); 
         background-size: cover; 
         background-attachment: fixed; 
         color: white;
