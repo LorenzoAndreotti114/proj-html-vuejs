@@ -10,9 +10,9 @@ export default {
             <div class="row">
                 <!-- Info -->
                 <div class="col-md-3">
-                    <p>
-                        <strong>Avada Pet Supplies</strong>
-                    </p>
+                    <div class="logo">
+                        <img src="../assets/img/logo.svg" alt="Logo" style="filter: invert(100%); color: white;">
+                    </div>
                     <p>
                         1234 Avada Avenue, Avadaville | <a href="mailto:info@your-company.com">info@your-company.com</a>
                         |
@@ -22,7 +22,7 @@ export default {
                 <!-- /Info -->
                 <!-- Shop -->
                 <div class="col-md-3">
-                    <h1>Shop My Brand</h1>
+                    <h2>Shop My Brand</h2>
                     <ul>
                         <li>Bed</li>
                         <li>Food</li>
@@ -33,7 +33,7 @@ export default {
                 <!-- /Shop -->
                 <!-- Useful Links -->
                 <div class="col-md-3">
-                    <h1>Useful Links</h1>
+                    <h2>Useful Links</h2>
                     <ul>
                         <li>My Account</li>
                         <li>Orders</li>
@@ -44,11 +44,13 @@ export default {
                 <!-- /Useful Links -->
                 <!-- Newsletter -->
                 <div class="col-md-3">
-                    <div class="card bg-transparent">
-                        <div class="card-body">
-                            <h1>Subscribe to Our Newsletter</h1>
-                            <input type="email" class="form-control mb-2" placeholder="Inserisci la tua email...">
-                            <button type="submit" class="btn btn-primary">Iscriviti</button>
+                    <div class="card text-white" style="background-color: #273F29;">
+                        <div class="card-overlay" style="background-image: url('https://avada.website/pet-supplies/wp-content/uploads/sites/139/2020/04/bg-transparent-3.png'); background-size: cover;">
+                            <div class="card-body">
+                                <h1>Subscribe to Our Newsletter</h1>
+                                <input type="email" class="form-control mb-2" placeholder="Inserisci la tua email...">
+                                <button type="submit" class="btn btn-primary">Iscriviti</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -65,8 +67,8 @@ a {
     color: white;
 }
 
-li {
-    text-decoration: none;
+ul {
+    list-style-type: none;
 }
 
 .footer {
