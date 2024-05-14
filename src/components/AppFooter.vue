@@ -44,9 +44,8 @@ export default {
                 <!-- /Useful Links -->
                 <!-- Newsletter -->
                 <div class="col-md-3">
-                    <div class="card text-white"
-                        style="background-image: url('https://avada.website/pet-supplies/wp-content/uploads/sites/139/2020/04/bg-transparent-3.png'); background-size: cover;">
-                        <div class="card-overlay" style="background-color: #273F29;">
+                    <div class="card text-white" style="background-color: #273F29;">
+                        <div class="card-overlay" style="background-image: url('https://avada.website/pet-supplies/wp-content/uploads/sites/139/2020/04/bg-transparent-3.png'); background-size: cover;">
                             <div class="card-body">
                                 <h1>Subscribe to Our Newsletter</h1>
                                 <input type="email" class="form-control mb-2" placeholder="Inserisci la tua email...">
