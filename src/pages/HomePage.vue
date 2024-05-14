@@ -4,6 +4,7 @@
     import AppDiscount from '../components/AppDiscount.vue';
     import AppBrowseCategory from '../components/AppBrowseCategory.vue';
     import AppDogfoodCards from '../components/AppDogfoodCards.vue';
+    import AppNewArrivals from '../components/AppNewArrivals.vue'
     
 
     export default {
@@ -13,6 +14,7 @@
             AppDiscount,
             AppBrowseCategory,
             AppDogfoodCards,
+            AppNewArrivals,
         },
 
         data() {
@@ -40,9 +42,7 @@
         <AppDogfoodCards />
 
         <!-- NEW ARRIVALS BANNER -->
-        <div>
-
-        </div>
+        <AppNewArrivals />
 
         <!-- BEST SELLERS -->
         <div>
