@@ -60,6 +60,8 @@ export default {
 </template>
 
 <style scoped lang="scss">
+
+
 .sticky {
   position: sticky;
   top: 0;
@@ -68,6 +70,7 @@ export default {
 }
 
 .header {
+ 
   background-color: #ffffff;
   padding-top: 1%;
 }
