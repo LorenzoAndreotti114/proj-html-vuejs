@@ -65,7 +65,9 @@
 
             <div class="inner-bottom">
 
-                <div class="ms_card">
+                <div class="ms_card" v-for="(cardItem, index) in bestSellers">
+                    
+                    <div><img :src="cardItem.image" alt=""></div>
 
                 </div>
 
@@ -78,6 +80,11 @@
 </template>
 
 <style scoped>
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
 
     .ms_container {
         display: flex;
@@ -134,6 +141,13 @@
     /* BOTTOM */
     .inner-bottom {
         width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 5% 0;
+    }
+
+    .ms_card {
+        width: 23%;
     }
 
 </style>

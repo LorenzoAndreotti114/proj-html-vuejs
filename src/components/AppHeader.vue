@@ -18,7 +18,7 @@ export default {
   <div class="header">
     <!-- Header top -->
     <div class="header-top"> 
-      <div class="logo sticky">
+      <div class="logo">
         <img src="../assets/img/logo.svg" alt="Logo">
       </div>
       <div class="search-bar">
@@ -28,7 +28,7 @@ export default {
       <div class="contact-info">
         <span><strong>Questions?</strong> Call us: 1.800.123.4567</span>
       </div>
-      <div class="icons sticky">
+      <div class="icons">
         <i class="fas fa-shopping-cart"></i>
         <i class="fas fa-user"></i>
       </div>
@@ -61,7 +61,6 @@ export default {
 
 <style scoped lang="scss">
 
-
 .sticky {
   position: sticky;
   top: 0;
@@ -70,7 +69,6 @@ export default {
 }
 
 .header {
- 
   background-color: #ffffff;
   padding-top: 1%;
 }
