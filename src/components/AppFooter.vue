@@ -56,6 +56,40 @@ export default {
                 </div>
                 <!-- /Newsletter -->
             </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-1">
+                    <p>
+                        <!-- da cambiare col router-link -->
+                        <a href="">Home</a> 
+                    </p>
+                </div>
+                <div class="col-md-1">
+                    <p>
+                        <!-- da cambiare col router-link -->
+                        <a href="">About</a>
+                    </p>
+                </div>
+                <div class="col-md-1">
+                    <p>
+                        <!-- da cambiare col router-link -->
+                        <a href="">Blog</a>
+                    </p>
+                </div>
+                <div class="col-md-1">
+                    <p>
+                        <!-- da cambiare col router-link -->
+                        <a href="">Contact</a>
+                    </p>
+                </div>
+                <div class="col-md-1">
+                    <p>
+                        <!-- da cambiare col router-link -->
+                        <a href="">Shop</a>
+                    </p>
+                </div>
+            </div>
+
         </div>
     </footer>
 </template>
@@ -68,7 +102,13 @@ a {
 }
 
 ul {
-    list-style-type: none;
+    list-style-type: none;    
+
+    li {
+        text-align: left;
+        font-size: 1rem;
+        padding-top: 2rem;
+    }
 }
 
 .footer {
