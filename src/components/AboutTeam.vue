@@ -5,18 +5,24 @@ export default {
     teamMembers: {
       type: Array,
       default: () => [
-        {   name: 'Cheryl Dobson', 
-            image: '../assets/img/staff1.jpg',              
+        {   
+            name: 'Cheryl Dobson', 
+            image: 'https://avada.website/pet-supplies/wp-content/uploads/sites/139/2020/04/staff-1@2x-800x753.jpg',              
             description: 'lorem lorem lorem lorem lorem lorem lorem lore lorem loreme lorem lorem', 
-            social: { fb: '#', tw: '#', ig: '#' } },
-        {   name: 'Andrew McNiel', 
-            image: '../assets/img/staff2.jpg',              
+            social: { fb: '#', tw: '#', ig: '#' } 
+        },
+        {   
+            name: 'Andrew McNiel', 
+            image: 'https://avada.website/pet-supplies/wp-content/uploads/sites/139/2020/04/avatar-8-800x753.jpg',              
             description: 'lorem lorem lorem lorem lorem lorem lorem lore lorem loreme', 
-            social: { fb: '#', tw: '#', ig: '#' } },
-        {   name: 'Sarah Green', 
-            image: '../assets/img/staff3.jpg',              
+            social: { fb: '#', tw: '#', ig: '#' } 
+        },
+        {   
+            name: 'Sarah Green', 
+            image: 'https://avada.website/pet-supplies/wp-content/uploads/sites/139/2020/04/staff-3@2x-800x753.jpg',              
             description: 'lorem lorem lorem lorem lorem lorem lorem lore lorem loreme', 
-            social: { fb: '#', tw: '#', ig: '#' } }
+            social: { fb: '#', tw: '#', ig: '#' } 
+        }
       ]
     }
   }
@@ -45,7 +51,7 @@ export default {
                     <img :src="member.image" :alt="member.name">
 
                 <!-- member card name -->
-                    <h4>{{ member.name }}</h4>
+                    <h5>{{ member.name }}</h5>
 
                 <!-- member card description -->
                     <p>{{ member.description }}</p>
@@ -68,7 +74,7 @@ export default {
 
 .team-section {
         text-align: center;
-        padding: 20vw 10vw;
+        padding: 2vw 2vw;
         background-color: #fff;
 
         h2 {
@@ -77,8 +83,8 @@ export default {
             font-size: 1.5vw;
         }
 
-        h3 {
-            
+        h5 {
+            margin-top: 1vw;
         }
     }
 
@@ -91,9 +97,9 @@ export default {
     }
 
     .team-member {
-        width: 30%;
+        width: 40%;
         padding: 5vw;
-        margin: 3vw;
+        margin: 3vw 1vw;
         transition: transform 0.3s ease;
     }
 
@@ -103,7 +109,7 @@ export default {
 
     .team-member img {
         width: 100%;
-        height: auto;
+        
     }
 
     .social-icons {
