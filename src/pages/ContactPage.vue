@@ -11,9 +11,21 @@ export default {
 
 <template>
     <div class="banner">
-        PAGINA CONTATTI
-        <!-- <a href="https://avada.website/pet-supplies/wp-content/uploads/sites/139/2020/04/banner-14@2x-scaled.jpg"></a> -->
+        <!-- BANNER -->
     </div>
+    <div class="container">
+        <!-- SEND MESSAGES -->
+    </div>
+    <div class="container">
+        <!-- USERS TESTIMONIALS -->
+    </div>
+    <div class="container">
+        <!-- NEWSLETTER -->
+    </div>
+    <div class="container">
+        <!-- STAFF -->
+    </div>
+
 </template>
 
 <style>
