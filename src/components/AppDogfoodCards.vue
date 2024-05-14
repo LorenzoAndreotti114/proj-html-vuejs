@@ -69,7 +69,7 @@
 
     .ms_background {
         width: 30%;
-        background-color: rgb(1, 39, 13);
+        background-color: rgb(30, 49, 32);
         margin: 0 0.5%;
     }
 
@@ -90,7 +90,7 @@
 
     .subtitle {
         font-size: 1vw;
-        color: rgb(158, 197, 158);
+        color: #447a49;
         padding-top: 2%;
     }
 
@@ -111,7 +111,7 @@
     .btn {
         color: white;
         font-size: 1.2vw;
-        background-color: rgb(1, 97, 31);
+        background-color: #3d6f42;
         border-radius: 50px;
         padding: 2% 4%;
     }

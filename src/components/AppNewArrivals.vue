@@ -83,13 +83,12 @@
  .btn {
     background-color: white;
     border-radius: 50px;
+    font-size: 1vw;
     padding: 1% 2%;
  }
 
  .btn:hover {
-    background-color: darkgreen;
+    background-color: #3d6f42;
  }
-
-
 
 </style>

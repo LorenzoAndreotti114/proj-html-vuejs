@@ -32,7 +32,7 @@
 
     .ms_container {
         width: 100%;
-        background-color: rgb(1, 39, 13);
+        background-color: rgb(30, 49, 32);
     }
 
     .ms_inner-container {
