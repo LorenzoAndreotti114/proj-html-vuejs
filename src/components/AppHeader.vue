@@ -4,17 +4,32 @@ export default {
   name: 'AppHeader',
   data() {
     return {
-      showDropdown: false
+      dropdowns: {},
+      showDropdown: false,
+      routes: [
+        { title: "Home", name: "Home", hasDropdown: true },
+        { title: "About", name: "About", hasDropdown: true },
+        { title: "Contact", name: "Contact", hasDropdown: true },
+      ]
     }
-  }
+  },
+    methods: {
+    toggleDropdown(routeName) {
+      this.dropdowns[routeName] = !this.dropdowns[routeName]; 
+      // è una funzione che cambia lo stato del dropdown corrispondente alla voce del menu su cui si trova il mouse. La logica di questa funzione alterna lo stato di visibilità del dropdown, attivandolo o disattivandolo a seconda del suo stato attuale.
+      }
+    },
 }
 
 </script>
 
 <template>
+
+  <!-- Header container -->
   <div class="header">
 
-     <div class="header-top">
+    <!-- Header top -->
+    <div class="header-top">
         
             <div class="logo">
                 <img src="../assets/img/logo.svg" alt="Logo">
@@ -35,21 +50,22 @@ export default {
                 <i class="fas fa-user"></i>
             </div>
         </div>
+
+<!-- Navbar -->
         <nav class="nav-bar">
-            <ul>
-                <li @mouseover="showDropdown = true" @mouseleave="showDropdown = false">
-                        <a href="/">Home</a><i class="fa-solid fa-chevron-down"></i>
-                    <ul v-show="showDropdown" class="dropdown">
-                        <li><a href="/">Home-Alternate</a></li>
-                    </ul>
-                </li>
-                <li><a href="/shop">Shop</a><i class="fa-solid fa-chevron-down chevron-icon"></i></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/contact">Contact</a></li>
-                <li><a href="/brand">Shop by brand</a><i class="fa-solid fa-chevron-down chevron-icon"></i></li>
-            </ul>   
+          <ul>
+              <li v-for="route in routes" @mouseover="toggleDropdown(route.name)" @mouseleave="toggleDropdown(route.name)">
+                    <router-link :to="{ name: route.name }">{{ route.title }}</router-link>
+                    <i class="fa-solid fa-chevron-down" v-if="route.hasDropdown"></i> 
+                    <!-- v-if="route.hasDropdown" controlla se mostrare l'icona del menu a tendina -->
+                  <ul v-show="dropdowns[route.name]" class="dropdown">
+                    <!-- v-show="dropdowns[route.name]" decide se mostrare o nascondere l'elemento <ul> del dropdown in base allo stato memorizzato in dropdowns. -->
+                    <li><router-link to="/">Alternate</router-link></li>
+                  </ul>
+              </li>
+          </ul>     
         </nav>
+<!-- Header Bottom -->
         <div class="header-bottom">
             <div class="feature">
                 <i class="fas fa-globe"></i>
@@ -69,9 +85,11 @@ export default {
 </template>
 
 <style scoped lang="scss">
+
+
 .header {
   background-color: #ffffff;
-  padding: 10px 20px;
+  padding-top: 1%;
 }
 
 .header-top {
@@ -94,14 +112,13 @@ export default {
 
 .search-bar {
   position: relative;
- 
   margin: 0 100px;
 }
 
 .search-bar input {
   width: 100%;
   padding: 8px 10px 8px 30px;
-  font-size: 16px;
+  font-size: 1vw;
   border: 1px solid #ccc;
   border-radius: 20px;
   background-color: #f5f5f5;
@@ -120,7 +137,7 @@ export default {
 
 .contact-info {
   flex: 1; 
-  font-size: 14px;
+  font-size: 1vw;
   padding-left: 40px;
 }
 
