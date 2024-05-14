@@ -4,7 +4,8 @@
     import AppDiscount from '../components/AppDiscount.vue';
     import AppBrowseCategory from '../components/AppBrowseCategory.vue';
     import AppDogfoodCards from '../components/AppDogfoodCards.vue';
-    import AppNewArrivals from '../components/AppNewArrivals.vue'
+    import AppNewArrivals from '../components/AppNewArrivals.vue';
+    import AppBestSellers from '../components/AppBestSellers.vue';
     
 
     export default {
@@ -15,6 +16,7 @@
             AppBrowseCategory,
             AppDogfoodCards,
             AppNewArrivals,
+            AppBestSellers,
         },
 
         data() {
@@ -45,14 +47,7 @@
         <AppNewArrivals />
 
         <!-- BEST SELLERS -->
-        <div>
-
-            <!-- LITTLE CARDS RANDOM -->
-            <div>
-
-            </div>
-
-        </div>
+        <AppBestSellers />
 
         <!-- TESTIMONIALS -->
         <div>
