@@ -1,13 +1,10 @@
 <script>
 export default {
   name: 'AppHeader',
-  data() {
-    return {
-      routes: [
-        { title: "Home", name: "Home" },
-        { title: "About", name: "About" },
-        { title: "Contact", name: "Contact" },
-      ]
+  props: {
+    routes: {
+      type: Array,
+      default: () => []
     }
   },
 }
@@ -34,7 +31,7 @@ export default {
       </div>
     </div>
     <!-- Navbar -->
-    <nav class="nav-bar sticky">
+    <nav class="nav-bar">
       <ul>
         <li v-for="route in routes" :key="route.name">
           <router-link :to="{ name: route.name }">{{ route.title }}</router-link>
@@ -60,13 +57,6 @@ export default {
 </template>
 
 <style scoped lang="scss">
-
-.sticky {
-  position: sticky;
-  top: 0;
-  background-color: #ffffff;
-  z-index: 1000;
-}
 
 .header {
   background-color: #ffffff;

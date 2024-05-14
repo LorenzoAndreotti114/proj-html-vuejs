@@ -12,6 +12,11 @@
 
     data() {
       return {
+        headerRoutes: [
+        { title: "Home", name: "Home" },
+        { title: "About", name: "About" },
+        { title: "Contact", name: "Contact" },
+      ]
         
       }
     },
@@ -19,8 +24,8 @@
 </script>
 
 <template>
-
-  <AppHeader />
+ 
+  <AppHeader :routes="headerRoutes"/>
 
   <router-view></router-view>
 
