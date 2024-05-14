@@ -7,6 +7,7 @@ export default {
 <template>
     <footer class="footer">
         <div class="container">
+            <!-- PRIMA PARTE DEL FOOTER -->
             <div class="row">
                 <!-- Info -->
                 <div class="col-md-3">
@@ -45,7 +46,8 @@ export default {
                 <!-- Newsletter -->
                 <div class="col-md-3">
                     <div class="card text-white" style="background-color: #273F29;">
-                        <div class="card-overlay" style="background-image: url('https://avada.website/pet-supplies/wp-content/uploads/sites/139/2020/04/bg-transparent-3.png'); background-size: cover;">
+                        <div class="card-overlay"
+                            style="background-image: url('https://avada.website/pet-supplies/wp-content/uploads/sites/139/2020/04/bg-transparent-3.png'); background-size: cover;">
                             <div class="card-body">
                                 <h1>Subscribe to Our Newsletter</h1>
                                 <input type="email" class="form-control mb-2" placeholder="Inserisci la tua email...">
@@ -56,42 +58,76 @@ export default {
                 </div>
                 <!-- /Newsletter -->
             </div>
+            <!-- /PRIMA PARTE DEL FOOTER -->
             <hr>
+            <!-- SECONDA PARTE DEL FOOTER -->
             <div class="row">
-                <div class="col-md-1">
+                <div class="col-md-1 text-center">
                     <p>
                         <!-- da cambiare col router-link -->
-                        <a href="">Home</a> 
+                        <a href="">Home</a>
                     </p>
                 </div>
-                <div class="col-md-1">
+                <div class="col-md-1 text-center">
                     <p>
                         <!-- da cambiare col router-link -->
                         <a href="">About</a>
                     </p>
                 </div>
-                <div class="col-md-1">
+                <div class="col-md-1 text-center">
                     <p>
                         <!-- da cambiare col router-link -->
                         <a href="">Blog</a>
                     </p>
                 </div>
-                <div class="col-md-1">
+                <div class="col-md-1 text-center">
                     <p>
                         <!-- da cambiare col router-link -->
                         <a href="">Contact</a>
                     </p>
                 </div>
-                <div class="col-md-1">
+                <div class="col-md-1 text-center">
                     <p>
                         <!-- da cambiare col router-link -->
                         <a href="">Shop</a>
                     </p>
                 </div>
             </div>
-
+            <!-- /SECONDA PARTE DEL FOOTER -->
+            <br>
+            <!-- TERZA PARTE DEL FOOTER -->
+            <div class="row">
+                <div class="col-md-1 text-center">
+                    <p>
+                        <i class="fab fa-facebook"></i>
+                    </p>
+                </div>
+                <div class="col-md-1 text-center">
+                    <p>
+                        <i class="fab fa-twitter"></i>
+                    </p>
+                </div>
+                <div class="col-md-1 text-center">
+                    <p>
+                        <i class="fab fa-instagram"></i>
+                    </p>
+                </div>
+                <div class="col-md-1 text-center">
+                    <p>
+                        <i class="fab fa-youtube"></i>
+                    </p>
+                </div>
+            </div>
+            <!-- /TERZA PARTE DEL FOOTER -->
         </div>
     </footer>
+    <footer class="footer bg-black text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">© Copyright 2012 - 2024 | Avada Website Builder by ThemeFusion | All Rights Reserved |
+                Powered by WordPress</p>
+        </div>
+    </footer>
+
 </template>
 
 
@@ -102,7 +138,7 @@ a {
 }
 
 ul {
-    list-style-type: none;    
+    list-style-type: none;
 
     li {
         text-align: left;
@@ -117,4 +153,5 @@ ul {
     font-size: 0.8rem;
     color: white;
 }
+
 </style>
