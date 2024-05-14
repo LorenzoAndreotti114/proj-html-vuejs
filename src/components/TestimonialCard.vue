@@ -58,7 +58,7 @@ export default {
 
 .testimonial-card span {
     font-weight: bold;
-    color: grey; /* Darker color for names */
+    color: grey; 
     
 }
 </style>
