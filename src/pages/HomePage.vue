@@ -3,6 +3,7 @@
     import AppHero from '../components/AppHero.vue';
     import AppDiscount from '../components/AppDiscount.vue';
     import AppBrowseCategory from '../components/AppBrowseCategory.vue';
+    import AppDogfoodCards from '../components/AppDogfoodCards.vue';
     
 
     export default {
@@ -11,6 +12,7 @@
             AppHero,
             AppDiscount,
             AppBrowseCategory,
+            AppDogfoodCards,
         },
 
         data() {
@@ -33,6 +35,9 @@
 
         <!-- BROWSE BY CATEGORY -->
         <AppBrowseCategory />
+
+        <!-- DOG FOOD CARDS -->
+        <AppDogfoodCards />
 
         <!-- NEW ARRIVALS BANNER -->
         <div>

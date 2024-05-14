@@ -10,7 +10,7 @@ export default {
     <div class="header">
     <div class="header-top">
         <div class="logo">
-          <img src="./assets/logo.svg" alt="Logo">
+          <img src="../assets/img/logo.svg" alt="Logo">
           <span>Avada Pet Supplies</span>
         </div>
         <div class="search-bar">
