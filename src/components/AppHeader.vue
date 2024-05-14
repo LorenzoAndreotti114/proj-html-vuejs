@@ -12,19 +12,10 @@ export default {
 </script>
 
 <template>
-    <div class="header">
-<<<<<<< HEAD
-    <div class="header-top">
-        <div class="logo">
-          <img src="../assets/img/logo.svg" alt="Logo">
-          <span>Avada Pet Supplies</span>
-        </div>
-        <div class="search-bar">
-          <i class="fas fa-search"></i>
-          <input type="text" placeholder="Search...">
-        </div>
-=======
-        <div class="header-top">
+  <div class="header">
+
+     <div class="header-top">
+        
             <div class="logo">
                 <img src="../assets/img/logo.svg" alt="Logo">
             </div>
@@ -32,7 +23,7 @@ export default {
                 <i class="fas fa-search"></i>
                 <input type="text" placeholder="Search...">
             </div>
->>>>>>> 1e6d300482a3b47cee95922d337504b99788123b
+
 
             <div class="contact-info">
                 <span>
@@ -73,9 +64,8 @@ export default {
                 <span>We price match to give you the best deal</span>
             </div>
         </div>
-    </div>
   </div>
-
+  
 </template>
 
 <style scoped lang="scss">
