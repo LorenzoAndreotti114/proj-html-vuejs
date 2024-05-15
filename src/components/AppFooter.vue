@@ -65,7 +65,7 @@ export default {
                             <div class="card-body">
                                 <h3 class="pb-4">Subscribe to Our Newsletter ...*</h3>
                                 <input type="email" class="form-control mb-2" placeholder="Insert your email">
-                                <button type="submit"> <strong>Subscribe</strong></button>
+                                <button type="submit"> <strong>Subscribe</strong> </button>
                             </div>
                         </div>
                     </div>
@@ -164,7 +164,8 @@ textarea {
     background-color: #f8f5f2;
 }
 
-button {
+.card-body {
+    button {
     background-color: #3d6f42;
     color: white;
     border: none;
@@ -179,6 +180,7 @@ button {
 
 button:hover {
     background-color: #305732;
+}
 }
 
 i {

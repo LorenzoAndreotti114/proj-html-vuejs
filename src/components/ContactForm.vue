@@ -63,6 +63,7 @@
 .container {
     font-size: 1.25rem;
     margin-top: 5rem;
+    margin-bottom: 6rem;
 
     .col-md-7 {
         margin-left: 5rem;

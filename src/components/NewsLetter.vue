@@ -45,6 +45,8 @@ export default {
 
 <style scoped lang="scss">
 .card {
+    position: relative;
+    top: -150px;
     background-image: url('https://avada.website/pet-supplies/wp-content/uploads/sites/139/2020/04/banner-7@2x-scaled.jpg');
     border: 0;
     border-radius: 0px;
