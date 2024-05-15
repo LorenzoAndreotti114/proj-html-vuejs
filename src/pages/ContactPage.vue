@@ -2,12 +2,14 @@
 
 import ContactHero from '../components/ContactHero.vue';
 import ContactForm from '../components/ContactForm.vue';
+import AboutTeam from '../components/AboutTeam.vue';
 
 export default {
 
     components: {
         ContactHero,
         ContactForm,
+        AboutTeam,
     },
 
     data() {
@@ -21,18 +23,14 @@ export default {
 
 <template>
     <ContactHero />
-    <!-- DA SISTEMARE -->
+
     <ContactForm />
-    <!-- /DA SISTEMARE -->
-    <div class="container">
-        <!-- USERS TESTIMONIALS -->
-    </div>
-    <div class="container">
-        <!-- NEWSLETTER -->
-    </div>
-    <div class="container">
-        <!-- STAFF -->
-    </div>
+
+    <!-- USERS TESTIMONIALS -->
+
+    <!-- NEWSLETTER -->
+    
+    <AboutTeam />
 
 </template>
 
