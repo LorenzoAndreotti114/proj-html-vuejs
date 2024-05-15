@@ -5,6 +5,7 @@
     import AboutShop from '../components/AboutShop.vue';
     import AboutTeam from '../components/AboutTeam.vue';
     import TestimonialCard from '../components/TestimonialCard.vue';
+    import AppDoubleBanner from '../components/AppDoubleBanner.vue';
 
    
     
@@ -16,11 +17,28 @@
              AboutPassionate,
              AboutShop,
              AboutTeam,
-             TestimonialCard
+             TestimonialCard,
+             AppDoubleBanner,
         },
 
         data() {
             return {
+                doubleBannerArray: [
+                {
+                    id: 1,
+                    title: "Popular accessories",
+                    subtitle: "FIND THE BEST ANIMAL SUPPLIES",
+                    type: "toys accessories",
+                    image: "https://avada.website/pet-supplies/wp-content/uploads/sites/139/2020/04/banner-8@2x.jpg",
+                },
+                {
+                    id: 2,
+                    title: "New food arrivals",
+                    subtitle: "FIND THE BEST FOOD",
+                    type: "food products",
+                    image: "https://avada.website/pet-supplies/wp-content/uploads/sites/139/2020/04/banner-9@2x.jpg",
+                },
+                ],
 
                 testimonials: [
                     {   
@@ -94,6 +112,11 @@
         <h1 class="testimonials-title">Users Testimonials</h1>
         <div class="testimonials-section">
             <TestimonialCard v-for="testimonial in testimonials" :key="testimonial.id" :testimonial="testimonial" />
+        </div>
+        
+                <!-- DOUBLE-BANNER-DOG/CAT -->
+        <div class="double-banner">
+            <AppDoubleBanner v-for="banner in doubleBannerArray" :key="banner.id" :doubleBannerArrays="banner"/>
         </div>
         
 
