@@ -64,6 +64,7 @@
         background-image: url("https://avada.website/pet-supplies/wp-content/uploads/sites/139/2020/04/banner-8@2x.jpg");
         background-size: cover;
         width: 50%;
+        transition-duration: 0.2s;
     }
 
     .container-left:hover {
@@ -75,6 +76,7 @@
         width: 50%;
         background-image: url("https://avada.website/pet-supplies/wp-content/uploads/sites/139/2020/04/banner-9@2x.jpg");
         background-size: cover;
+        transition-duration: 0.2s;
     }
 
     .container-right:hover {

@@ -8,6 +8,7 @@
     import AppBestSellers from '../components/AppBestSellers.vue';
     import AppTipsAndTricks from '../components/AppTipsAndTricks.vue';
     import AppDoubleBannerDogCat from '../components/AppDoubleBannerDogCat.vue';
+    import AppIconsBanner from '../components/AppIconsBanner.vue';
     
 
     export default {
@@ -21,6 +22,7 @@
             AppBestSellers,
             AppTipsAndTricks,
             AppDoubleBannerDogCat,
+            AppIconsBanner,
         },
 
         data() {
@@ -69,10 +71,8 @@
         <!-- DOUBLE-BANNER-DOG/CAT -->
         <AppDoubleBannerDogCat />
 
-        <!-- LITTLE BANNER -->
-        <div>
-
-        </div>
+        <!-- ICONS BANNER -->
+        <AppIconsBanner />
 
         <!-- NEW PRODUCTS -->
         <div>
