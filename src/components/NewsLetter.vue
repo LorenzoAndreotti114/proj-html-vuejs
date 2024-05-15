@@ -59,18 +59,23 @@ export default {
 
         input {
             border: none;
-            border-radius: 20px;
-            background-color: rgba(128, 128, 128, 0.137);
+            border-radius: 25px;
+            background-color: #f8f5f2;
+            padding: 15px;
+            padding-left: 30px;
+            padding-right: 30px;
         }
 
         button {
             background-color: #3d6f42;
             color: white;
-            padding: 6px 20px;
             border: none;
             border-radius: 50px;
             font-size: 16px;
             cursor: pointer;
+            padding: 15px;
+            padding-left: 30px;
+            padding-right: 30px;
         }
 
         button:hover {
