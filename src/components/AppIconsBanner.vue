@@ -1,6 +1,6 @@
 <script>    
     export default {
-        
+
     }
 </script>
 
@@ -15,7 +15,7 @@
 <style scoped>
 
     .ms_container {
-
+        width: 100%;
     }
 
 </style>
