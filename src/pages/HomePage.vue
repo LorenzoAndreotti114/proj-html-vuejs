@@ -6,6 +6,7 @@
     import AppDogfoodCards from '../components/AppDogfoodCards.vue';
     import AppNewArrivals from '../components/AppNewArrivals.vue';
     import AppBestSellers from '../components/AppBestSellers.vue';
+    import AppTipsAndTricks from '../components/AppTipsAndTricks.vue';
     
 
     export default {
@@ -17,6 +18,7 @@
             AppDogfoodCards,
             AppNewArrivals,
             AppBestSellers,
+            AppTipsAndTricks,
         },
 
         data() {
@@ -60,14 +62,7 @@
         </div>
 
         <!-- TIPS AND TRICKS -->
-        <div>
-
-            <!-- TIPS CARDS -->
-            <div>
-
-            </div>
-
-        </div>
+        <AppTipsAndTricks />
 
         <!-- ARTICLES -->
         <div>
