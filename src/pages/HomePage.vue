@@ -7,6 +7,7 @@
     import AppNewArrivals from '../components/AppNewArrivals.vue';
     import AppBestSellers from '../components/AppBestSellers.vue';
     import AppTipsAndTricks from '../components/AppTipsAndTricks.vue';
+    import AppDoubleBannerDogCat from '../components/AppDoubleBannerDogCat.vue';
     
 
     export default {
@@ -19,6 +20,7 @@
             AppNewArrivals,
             AppBestSellers,
             AppTipsAndTricks,
+            AppDoubleBannerDogCat,
         },
 
         data() {
@@ -64,20 +66,8 @@
         <!-- TIPS AND TRICKS -->
         <AppTipsAndTricks />
 
-        <!-- ARTICLES -->
-        <div>
-
-            <!-- LEFT -->
-            <div>
-
-            </div>
-
-            <!-- RIGHT -->
-            <div>
-
-            </div>
-
-        </div>
+        <!-- DOUBLE-BANNER-DOG/CAT -->
+        <AppDoubleBannerDogCat />
 
         <!-- LITTLE BANNER -->
         <div>
