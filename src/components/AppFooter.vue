@@ -4,10 +4,18 @@ export default {
     data() {
         return {
             routes: [
-                { title: "Home", name: "Home" },
-                { title: "About", name: "About" },
-                { title: "Contact", name: "Contact" },
-            ]
+                { title: "Home", name: "/" },
+                { title: "About", name: "about-us" },
+                { title: "Blog", name: "blog" },
+                { title: "Contact", name: "contact" },
+                { title: "Shop", name: "shop" },
+            ],
+            socialMedia: [
+                { id: 1, iconClass: 'fab fa-facebook' },
+                { id: 2, iconClass: 'fab fa-twitter' },
+                { id: 3, iconClass: 'fab fa-instagram' },
+                { id: 4, iconClass: 'fab fa-youtube' }
+            ],
         }
     },
     methods: {
@@ -76,34 +84,10 @@ export default {
             <hr>
             <!-- SECONDA PARTE DEL FOOTER -->
             <div class="row">
-                <div class="col-md-1 text-center">
-                    <p class="">
-                        <!-- da cambiare col router-link -->
-                        <a href="">Home</a>
-                    </p>
-                </div>
-                <div class="col-md-1 text-center">
+                <div v-for="route in routes" :key="route.name" class="col-md-1 text-center">
                     <p>
-                        <!-- da cambiare col router-link -->
-                        <a href="">About</a>
-                    </p>
-                </div>
-                <div class="col-md-1 text-center">
-                    <p>
-                        <!-- da cambiare col router-link -->
-                        <a href="">Blog</a>
-                    </p>
-                </div>
-                <div class="col-md-1 text-center">
-                    <p>
-                        <!-- da cambiare col router-link -->
-                        <a href="">Contact</a>
-                    </p>
-                </div>
-                <div class="col-md-1 text-center">
-                    <p>
-                        <!-- da cambiare col router-link -->
-                        <a href="">Shop</a>
+                        <!-- Cambia con router-link -->
+                        <router-link :to="route.name">{{ route.title }}</router-link>
                     </p>
                 </div>
             </div>
@@ -111,27 +95,13 @@ export default {
             <br>
             <!-- TERZA PARTE DEL FOOTER -->
             <div class="row">
-                <div class="col-md-1 text-center">
+                <div v-for="socialMedia in socialMedia" :key="socialMedia.id" class="col-md-1 text-center">
                     <p>
-                        <i class="fab fa-facebook"></i>
-                    </p>
-                </div>
-                <div class="col-md-1 text-center">
-                    <p>
-                        <i class="fab fa-twitter"></i>
-                    </p>
-                </div>
-                <div class="col-md-1 text-center">
-                    <p>
-                        <i class="fab fa-instagram"></i>
-                    </p>
-                </div>
-                <div class="col-md-1 text-center">
-                    <p>
-                        <i class="fab fa-youtube"></i>
+                        <i :class="socialMedia.iconClass"></i>
                     </p>
                 </div>
             </div>
+
             <!-- /TERZA PARTE DEL FOOTER -->
         </div>
     </footer>
@@ -155,7 +125,6 @@ export default {
 
 
 <style scoped lang="scss">
-
 input,
 textarea {
     border: none;
@@ -166,21 +135,21 @@ textarea {
 
 .card-body {
     button {
-    background-color: #3d6f42;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 10px;
-    padding: 15px;
-    padding-left: 25px;
-    padding-right: 25px;
-}
+        background-color: #3d6f42;
+        color: white;
+        border: none;
+        border-radius: 50px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 10px;
+        padding: 15px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 
-button:hover {
-    background-color: #305732;
-}
+    button:hover {
+        background-color: #305732;
+    }
 }
 
 i {
@@ -223,5 +192,4 @@ ul {
     color: white;
     font-size: 25px;
 }
-
 </style>
