@@ -3,6 +3,7 @@
 import ContactHero from '../components/ContactHero.vue';
 import ContactForm from '../components/ContactForm.vue';
 import AboutTeam from '../components/AboutTeam.vue';
+import NewsLetter from '../components/NewsLetter.vue';
 
 export default {
 
@@ -10,6 +11,7 @@ export default {
         ContactHero,
         ContactForm,
         AboutTeam,
+        NewsLetter,
     },
 
     data() {
@@ -28,8 +30,8 @@ export default {
 
     <!-- USERS TESTIMONIALS -->
 
-    <!-- NEWSLETTER -->
-    
+    <NewsLetter />
+
     <AboutTeam />
 
 </template>
