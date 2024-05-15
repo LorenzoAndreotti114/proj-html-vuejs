@@ -1,16 +1,21 @@
 <script>
 export default {
-  name: 'AppFooter',
-  data() {
-    return {
-      routes: [
-        { title: "Home", name: "Home" },
-        { title: "About", name: "About" },
-        { title: "Contact", name: "Contact" },
-      ]
-    }
-  },
-}
+    name: 'AppFooter',
+    data() {
+        return {
+            routes: [
+                { title: "Home", name: "Home" },
+                { title: "About", name: "About" },
+                { title: "Contact", name: "Contact" },
+            ]
+        }
+    },
+    methods: {
+        scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    },
+};
 </script>
 
 <template>
@@ -33,35 +38,34 @@ export default {
                 <!-- Shop -->
                 <div class="col-md-3">
                     <h2>Shop My Brand</h2>
-                    <ul>
-                        <li>Bed</li>
-                        <li>Food</li>
-                        <li>Toys</li>
-                        <li>Transport</li>
+                    <ul class="ps-0">
+                        <li class="pt-4">Bed</li>
+                        <li class="pt-3">Food</li>
+                        <li class="pt-3">Toys</li>
+                        <li class="pt-3">Transport</li>
                     </ul>
                 </div>
                 <!-- /Shop -->
                 <!-- Useful Links -->
                 <div class="col-md-3">
                     <h2>Useful Links</h2>
-                    <ul>
-                        <li>My Account</li>
-                        <li>Orders</li>
-                        <li>Checkout</li>
-                        <li>Cart</li>
+                    <ul class="ps-0">
+                        <li class="pt-4">My Account</li>
+                        <li class="pt-3">Orders</li>
+                        <li class="pt-3">Checkout</li>
+                        <li class="pt-3">Cart</li>
                     </ul>
                 </div>
                 <!-- /Useful Links -->
                 <!-- Newsletter -->
                 <div class="col-md-3">
                     <div class="card text-white" style="background-color: #273F29;">
-                        <div class="card-overlay"
-                            style="background-image: url('https://avada.website/pet-supplies/wp-content/uploads/sites/139/2020/04/bg-transparent-3.png');
+                        <div class="card-overlay" style="background-image: url('https://avada.website/pet-supplies/wp-content/uploads/sites/139/2020/04/bg-transparent-3.png');
                                     background-size: cover;">
                             <div class="card-body">
-                                <h1>Subscribe to Our Newsletter</h1>
-                                <input type="email" class="form-control mb-2" placeholder="Inserisci la tua email...">
-                                <button type="submit" class="btn btn-primary">Iscriviti</button>
+                                <h3 class="pb-4">Subscribe to Our Newsletter ...*</h3>
+                                <input type="email" class="form-control mb-2" placeholder="Insert your email">
+                                <button type="submit"> <strong>Subscribe</strong></button>
                             </div>
                         </div>
                     </div>
@@ -73,7 +77,7 @@ export default {
             <!-- SECONDA PARTE DEL FOOTER -->
             <div class="row">
                 <div class="col-md-1 text-center">
-                    <p>
+                    <p class="">
                         <!-- da cambiare col router-link -->
                         <a href="">Home</a>
                     </p>
@@ -136,6 +140,13 @@ export default {
         <div class="container">
             <p class="mb-0">© Copyright 2012 - 2024 | Avada Website Builder by ThemeFusion | All Rights Reserved |
                 Powered by WordPress</p>
+
+            <div class="content has-text-centered">
+                <!-- Altri contenuti del footer -->
+                <button @click="scrollToTop" class="scroll-top-btn">
+                    <i class="fas fa-chevron-up"></i> <!-- Icona per tornare all'inizio -->
+                </button>
+            </div>
         </div>
     </footer>
     <!-- /BLACK FOOTER -->
@@ -144,6 +155,37 @@ export default {
 
 
 <style scoped lang="scss">
+
+input,
+textarea {
+    border: none;
+    padding: 15px;
+    border-radius: 25px;
+    background-color: #f8f5f2;
+}
+
+button {
+    background-color: #3d6f42;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+button:hover {
+    background-color: #305732;
+}
+
+i {
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -164,6 +206,20 @@ ul {
     padding: 2rem 0;
     font-size: 0.8rem;
     color: white;
+}
+
+.scroll-top-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 2rem;
+    background-color: #8888886c;
+}
+
+.scroll-top-btn i {
+    color: white;
+    font-size: 25px;
 }
 
 </style>
