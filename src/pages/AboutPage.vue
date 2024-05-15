@@ -90,6 +90,8 @@
 
         <AboutTeam />
 
+        <!-- Users testimonials section -->
+        <h1 class="testimonials-title">Users Testimonials</h1>
         <div class="testimonials-section">
             <TestimonialCard v-for="testimonial in testimonials" :key="testimonial.id" :testimonial="testimonial" />
         </div>
@@ -101,13 +103,18 @@
 
 <style>
 
-.testimonials-section {
+.testimonials-section, .testimonials-title {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
     display: flex;
-    
+    background-color: rgb(30, 49, 32);
+    background-image: linear-gradient(to bottom, rgba(30, 49, 32, 0.1), rgb(30, 49, 32)), url("https://avada.website/pet-supplies/wp-content/uploads/sites/139/2020/04/bg-transparent-3.png");
+    padding: 2vw;
+    position: relative;   
+    color: white; 
+    margin: 0 auto;
 } 
 
 </style>

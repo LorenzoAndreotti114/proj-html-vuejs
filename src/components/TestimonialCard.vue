@@ -11,54 +11,60 @@ export default {
 </script>
 
 <template>
+           
+            <!-- card container -->
+            <div class="testimonial-card">
 
+                
 
-    <!-- card container -->
-    <div class="testimonial-card">
+                <!-- card img -->
+                <img :src="testimonial.image" :alt="testimonial.name">
 
-        
+                <!-- testimonial description -->
+                <p>{{ testimonial.text }}</p>
 
-        <!-- card img -->
-        <img :src="testimonial.image" :alt="testimonial.name">
+                <!-- name -->
+                <span>{{ testimonial.name }},{{ testimonial.affiliation }}</span>
 
-        <!-- testimonial description -->
-        <p>{{ testimonial.text }}</p>
-
-        <!-- name -->
-        <span>{{ testimonial.name }},{{ testimonial.affiliation }}</span>
-
-    </div>
+            </div>
 
 </template>
 
 <style scoped>
 
 .testimonial-card {
-    width: 30%;
-    text-align: center;
-    background-color: rgb(30, 49, 32);
     
+    width: 350px;
+    text-align: center;
+    background-color: transparent;
+    padding: 2vw;
+  
 }
 
 .testimonial-card:hover {
     transform: scale(1.05);
 }
 
-.testimonial-card img {
+.testimonials-title {
+    color: white;
+    
+}
+
+
+.testimonial-card img {    
     width: 8vw; 
     height: 8vw; 
     border-radius: 50%;    
 }
 
-.testimonial-card p {
-    font-size: 1.3vw;
+.testimonial-card p {   
     margin: 10px 0;
-    color: white; 
+    color: white;
+    overflow: hidden;  
 }
 
 .testimonial-card span {
     font-weight: bold;
     color: grey; 
-    
 }
 </style>
