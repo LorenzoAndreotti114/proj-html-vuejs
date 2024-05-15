@@ -10,8 +10,7 @@ export default {
 
 <template>
     <div class="container mt-5">
-        <div class="card"
-            style="background-image: url('https://avada.website/pet-supplies/wp-content/uploads/sites/139/2020/04/banner-7@2x-scaled.jpg');">
+        <div class="card">
             <div class="card-body">
                 <div class="row align-items-center">
                     <div class="col-md-7">
@@ -46,6 +45,7 @@ export default {
 
 <style scoped lang="scss">
 .card {
+    background-image: url('https://avada.website/pet-supplies/wp-content/uploads/sites/139/2020/04/banner-7@2x-scaled.jpg');
     border: 0;
     border-radius: 0px;
     background-size: cover;
