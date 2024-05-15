@@ -9,6 +9,7 @@
     import AppTipsAndTricks from '../components/AppTipsAndTricks.vue';
     import AppDoubleBanner from '../components/AppDoubleBanner.vue';
     import AppIconsBanner from '../components/AppIconsBanner.vue';
+    import AppNewProducts from '../components/AppNewProducts.vue';
     
 
     export default {
@@ -23,6 +24,7 @@
             AppTipsAndTricks,
             AppDoubleBanner,
             AppIconsBanner,
+            AppNewProducts,
         },
 
         data() {
@@ -93,14 +95,7 @@
         <AppIconsBanner />
 
         <!-- NEW PRODUCTS -->
-        <div>
-
-            <!-- LITTLE CARDS -->
-            <div>
-                
-            </div>
-
-        </div>
+        <AppNewProducts />
 
     </div>
 
