@@ -34,7 +34,7 @@ export default {
 <style scoped>
 
 .testimonial-card {
-    border-radius: 10px;
+    width: 30%;
     text-align: center;
     background-color: rgb(30, 49, 32);
     

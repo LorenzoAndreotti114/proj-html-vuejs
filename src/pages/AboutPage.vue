@@ -100,6 +100,14 @@
 </template>
 
 <style>
- 
+
+.testimonials-section {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    
+} 
 
 </style>
