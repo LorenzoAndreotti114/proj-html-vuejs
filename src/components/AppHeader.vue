@@ -13,47 +13,95 @@ export default {
 <template>
   <!-- Header container -->
   <div class="header">
-    <!-- Header top -->
-    <div class="header-top"> 
-      <div class="logo">
-        <img src="../assets/img/logo.svg" alt="Logo">
+
+      <!-- Header top -->
+      <div class="header-top"> 
+
+        <!-- header logo -->
+          <div class="logo">
+              <img src="../assets/img/logo.svg" alt="Logo">
+          </div>
+
+          <!-- header search bar -->
+          <div class="search-bar">
+
+            <!-- search icon -->
+              <i class="fas fa-search"></i>
+
+              <!-- search input -->
+              <input type="text" placeholder="Search...">
+
+          </div>
+
+          <!-- contact info -->
+          <div class="contact-info">
+              <span><strong>Questions?</strong> Call us: 1.800.123.4567</span>
+          </div>
+
+          <!-- user/cart icons -->
+          <div class="icons">
+              <i class="fas fa-shopping-cart"></i>
+              <i class="fas fa-user"></i>
+          </div>
+
       </div>
-      <div class="search-bar">
-        <i class="fas fa-search"></i>
-        <input type="text" placeholder="Search...">
+
+      <!-- Navbar -->
+      <nav class="nav-bar">
+
+        <!-- router connected Navbar menu -->
+        <ul>
+          <li v-for="route in routes" :key="route.name">
+            <router-link :to="{ name: route.name }">{{ route.title }}</router-link>
+          </li>
+        </ul>     
+      </nav>
+
+
+      <!-- Header Bottom -->
+      <div class="header-bottom">
+
+          <div class="header-bottom-background">
+            
+              <!-- feature 1 -->
+              <div class="feature">
+
+                <!-- globe icon -->
+                <i class="fas fa-globe"></i>
+
+                <!-- text -->
+                <span>International Shipping Services</span>
+
+              </div>
+
+              <!-- feature 2 -->
+              <div class="feature">
+
+                  <!-- clock icon  -->
+                <i class="fas fa-clock"></i>
+
+                <!-- text -->
+                <span>See our store hours and services</span>
+
+              </div>
+
+              <!-- feature 3 -->
+              <div class="feature">
+
+                <!-- check icon -->
+                <i class="fas fa-check"></i>
+
+                <!-- text -->
+                <span>We price match to give you the best deal</span>
+
+              </div>
+
+          </div>
+
       </div>
-      <div class="contact-info">
-        <span><strong>Questions?</strong> Call us: 1.800.123.4567</span>
-      </div>
-      <div class="icons">
-        <i class="fas fa-shopping-cart"></i>
-        <i class="fas fa-user"></i>
-      </div>
-    </div>
-    <!-- Navbar -->
-    <nav class="nav-bar">
-      <ul>
-        <li v-for="route in routes" :key="route.name">
-          <router-link :to="{ name: route.name }">{{ route.title }}</router-link>
-        </li>
-      </ul>     
-    </nav>
-    <!-- Header Bottom -->
-    <div class="header-bottom">
-      <div class="feature">
-        <i class="fas fa-globe"></i>
-        <span>International Shipping Services</span>
-      </div>
-      <div class="feature">
-        <i class="fas fa-clock"></i>
-        <span>See our store hours and services</span>
-      </div>
-      <div class="feature">
-        <i class="fas fa-check"></i>
-        <span>We price match to give you the best deal</span>
-      </div>
-    </div>
+
   </div>
+
 </template>
 
 <style scoped lang="scss">
@@ -148,18 +196,16 @@ export default {
 }
 
 .header-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 10px;
   color: white;
-  padding: 20px;
   background-color: rgb(30, 49, 32);
+  padding: 5vw;
+  background-image: url("https://avada.website/pet-supplies/wp-content/uploads/sites/139/2020/04/bg-transparent-3.png");
 }
 
-.feature {
+.header-bottom-background {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  align-items: center;  
 }
 
 .feature i {
