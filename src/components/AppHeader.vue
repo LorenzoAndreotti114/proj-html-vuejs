@@ -198,7 +198,7 @@ export default {
 .header-bottom {
   color: white;
   background-color: rgb(30, 49, 32);
-  padding: 5vw;
+  padding: 3vw;
   background-image: url("https://avada.website/pet-supplies/wp-content/uploads/sites/139/2020/04/bg-transparent-3.png");
 }
 

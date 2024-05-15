@@ -60,7 +60,8 @@ export default {
 .testimonial-card p {   
     margin: 10px 0;
     color: white;
-    overflow: hidden;  
+    overflow: hidden; 
+    
 }
 
 .testimonial-card span {

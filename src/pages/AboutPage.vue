@@ -28,42 +28,42 @@
                         name: 'Lisa Smith', 
                         affiliation: 'ThemeFusion', 
                         image: 'https://avada.website/pet-supplies/wp-content/uploads/sites/139/2020/04/avatar-3-200x200.jpg', 
-                        text: 'blablalblallblalblalblalblsalblalblslvlbldlalvlalcls...' 
+                        text: 'blab lalbl allblalblal blalblsalb lalblslvlbldl alvlalcls blab lalbl allblalblal blalblsalb lalblslvlbldl alvlalcls'
                     },
                     {   
                         id: 2, 
                         name: 'Melissa Green', 
                         affiliation: 'ThemeFusion', 
                         image: 'https://avada.website/pet-supplies/wp-content/uploads/sites/139/2020/04/avatar-1-200x200.jpg', 
-                        text: 'blablalblallblalblalblalblsalblalblslvlbldlalvlalcls...' 
+                        text: 'blab lalbl allblalblal blalblsalb lalblslvlbldl alvlalcls blab lalbl allblalblal blalblsalb lalblslvlbldl alvlalcls' 
                     },
                     {   
                         id: 3, 
                         name: 'Sam Lewis', 
                         affiliation: 'ThemeFusion', 
                         image: 'https://avada.website/pet-supplies/wp-content/uploads/sites/139/2020/04/avatar-4-200x200.jpg', 
-                        text: 'blablalblallblalblalblalblsalblalblslvlbldlalvlalcls...' 
+                        text: 'blab lalbl allblalblal blalblsalb lalblslvlbldl alvlalcls blab lalbl allblalblal blalblsalb lalblslvlbldl alvlalcls' 
                     },
                     {   
                         id: 4, 
                         name: 'Ben Springer', 
                         affiliation: 'ThemeFusion', 
                         image: 'https://avada.website/pet-supplies/wp-content/uploads/sites/139/2020/04/avatar-7-200x200.jpg', 
-                        text: 'blablalblallblalblalblalblsalblalblslvlbldlalvlalcls...' 
+                        text: 'blab lalbl allblalblal blalblsalb lalblslvlbldl alvlalcls blab lalbl allblalblal blalblsalb lalblslvlbldl alvlalcls' 
                     },
                     {   
                         id: 5, 
                         name: 'Hannah McLean', 
                         affiliation: 'ThemeFusion', 
                         image: 'https://avada.website/pet-supplies/wp-content/uploads/sites/139/2020/04/avatar-6-200x200.jpg', 
-                        text: 'blablalblallblalblalblalblsalblalblslvlbldlalvlalcls...' 
+                        text: 'blab lalbl allblalblal blalblsalb lalblslvlbldl alvlalcls blab lalbl allblalblal blalblsalb lalblslvlbldl alvlalcls'
                     },
                     {   
                         id: 6, 
                         name: 'Sarah Roberts', 
                         affiliation: 'ThemeFusion', 
                         image: 'https://avada.website/pet-supplies/wp-content/uploads/sites/139/2020/04/avatar-5-200x200.jpg', 
-                        text: 'blablalblallblalblalblalblsalblalblslvlbldlalvlalcls...' 
+                        text:'blab lalbl allblalblal blalblsalb lalblslvlbldl alvlalcls blab lalbl allblalblal blalblsalb lalblslvlbldl alvlalcls' 
                     }
                 ]
             }
