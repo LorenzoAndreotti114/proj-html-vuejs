@@ -11,7 +11,7 @@ export default {
             ],
             socialMedia: [
                 { id: 1, iconClass: 'fab fa-facebook' },
-                { id: 2, iconClass: 'fab fa-twitter' },
+                { id: 2, iconClass: 'fab fa-x-twitter' },
                 { id: 3, iconClass: 'fab fa-instagram' },
                 { id: 4, iconClass: 'fab fa-youtube' }
             ],
@@ -26,20 +26,23 @@ export default {
 </script>
 
 <template>
-    <footer class="footer pt-5 pb-5">
+    <footer class="top-footer pt-5 pb-5">
         <div class="container">
             <!-- PRIMA PARTE DEL FOOTER -->
             <div class="row">
                 <!-- Info -->
                 <div class="col-md-3">
                     <div class="logo">
-                        <img src="../assets/img/logo.svg" alt="Logo" style="filter: invert(100%); color: white;">
+                        <img src="../assets/img/logo.svg" alt="Logo">
                     </div>
-                    <p>
-                        1234 Avada Avenue, Avadaville | <a href="mailto:info@your-company.com">info@your-company.com</a>
-                        |
-                        Chiama: (1) 234 5678
-                    </p>
+                    <div class="info">
+                        <p> 
+                            1234 Avada Avenue, Avadaville <br>
+                            <a href="mailto:info@your-company.com">info@your-company.com</a> <br>
+                            Chiama: (1) 234 5678
+                        </p>
+                    </div>
+
                 </div>
                 <!-- /Info -->
                 <!-- Shop -->
@@ -83,8 +86,8 @@ export default {
             <!-- /PRIMA PARTE DEL FOOTER -->
             <hr>
             <!-- SECONDA PARTE DEL FOOTER -->
-            <div class="row justify-content-center">
-                <div v-for="route in routes" :key="route.name" class="col-md-1 text-center">
+            <div class="row justify-content-center margin-top">
+                <div v-for="route in routes" :key="route.name" class="col-md-1 text-center bottom-links">
                     <p>
                         <!-- Cambia con router-link -->
                         <router-link :to="route.name">{{ route.title }}</router-link>
@@ -94,8 +97,8 @@ export default {
             <!-- /SECONDA PARTE DEL FOOTER -->
             <br>
             <!-- TERZA PARTE DEL FOOTER -->
-            <div class="row justify-content-center">
-                <div v-for="socialMedia in socialMedia" :key="socialMedia.id" class="col-md-1 text-center">
+            <div class="row justify-content-center mt-4">
+                <div v-for="socialMedia in socialMedia" :key="socialMedia.id" class="col-md-1 text-center bottom-socials">
                     <p>
                         <i :class="socialMedia.iconClass"></i>
                     </p>
@@ -125,6 +128,20 @@ export default {
 
 
 <style scoped lang="scss">
+.logo {
+    filter: invert(100%);
+    color: white;
+    margin-bottom: 50px;
+}
+
+.info {
+    font-size: 1rem;
+
+    p {
+        font-size: 1rem;
+    }
+}
+
 .card {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -186,11 +203,16 @@ ul {
     }
 }
 
-.footer {
+.top-footer {
     background-color: #1E3120;
     padding: 2rem 0;
     font-size: 0.8rem;
     color: white;
+    height: 700px;
+
+    .container {
+        padding-top: 5rem;        
+    }
 }
 
 .scroll-top-btn {
@@ -205,5 +227,18 @@ ul {
 .scroll-top-btn i {
     color: white;
     font-size: 25px;
+}
+
+.margin-top {
+    margin-top: 4rem;
+}
+
+.bottom-links {
+    font-size: 1rem;
+}
+
+.bottom-socials {
+    margin: 0;
+    font-size: 1rem;
 }
 </style>

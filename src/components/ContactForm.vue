@@ -10,25 +10,25 @@
         <div class="row">
             <!-- Contenuto a sinistra -->
             <div class="col-md-4">
-                <div class="mb-5">
+                <div class="mb-5 pb-3">
                     <p>Amet pulvinar dignissim sapien massa amet, ac orci rutrum. Quam in sed leo mauris etiam ut diam
                         id. Metus viverra parturient montes, purus condimentum quis non sit amet. Euismod ligula.</p>
                 </div>
-                <div class="mb-5">
+                <div class="mb-5 pb-3">
                     <h2>We are passionnate about taking care of your animals</h2>
                 </div>
                 <div class="mb-3">
-                    <p>1234 Avada Avenue
+                    <p class="mb-3">1234 Avada Avenue <br>
                         Avadaville, 11221</p>
 
-                    <p>info@your-company.com
+                    <p class="mb-5">info@your-company.com <br>
                         Call us: (1) 234 5678</p>
 
-                    <p>
-                        <i class="fab fa-facebook" style="color: #3d6f42"></i>
-                        <i class="fab fa-twitter" style="color: #3d6f42"></i>
-                        <i class="fab fa-instagram" style="color: #3d6f42"></i>
-                        <i class="fab fa-youtube" style="color: #3d6f42"></i>
+                    <p style="color: #3d6f42;">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-x-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
                     </p>
                 </div>
             </div>
