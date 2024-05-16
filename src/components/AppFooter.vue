@@ -36,7 +36,7 @@ export default {
                         <img src="../assets/img/logo.svg" alt="Logo">
                     </div>
                     <div class="info">
-                        <p> 
+                        <p>
                             1234 Avada Avenue, Avadaville <br>
                             <a href="mailto:info@your-company.com">info@your-company.com</a> <br>
                             Chiama: (1) 234 5678
@@ -98,7 +98,8 @@ export default {
             <br>
             <!-- TERZA PARTE DEL FOOTER -->
             <div class="row justify-content-center mt-4">
-                <div v-for="socialMedia in socialMedia" :key="socialMedia.id" class="col-md-1 text-center bottom-socials">
+                <div v-for="socialMedia in socialMedia" :key="socialMedia.id"
+                    class="col-md-1 text-center bottom-socials">
                     <p>
                         <i :class="socialMedia.iconClass"></i>
                     </p>
@@ -114,7 +115,7 @@ export default {
             <p class="mb-0">© Copyright 2012 - 2024 | Avada Website Builder by ThemeFusion | All Rights Reserved |
                 Powered by WordPress</p>
 
-            <div class="content has-text-centered">
+            <div class="content">
                 <!-- Altri contenuti del footer -->
                 <button @click="scrollToTop" class="scroll-top-btn">
                     <i class="fas fa-chevron-up"></i>
@@ -211,23 +212,22 @@ ul {
     height: 700px;
 
     .container {
-        padding-top: 5rem;        
+        padding-top: 5rem;
     }
 }
 
-.scroll-top-btn {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    right: 2rem;
-    background-color: #8888886c;
-}
+    .scroll-top-btn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        right: 3rem;
+    }
 
-.scroll-top-btn i {
-    color: white;
-    font-size: 25px;
-}
+    .scroll-top-btn i {
+        color: white;
+        font-size: 1rem;
+    }
 
 .margin-top {
     margin-top: 4rem;
