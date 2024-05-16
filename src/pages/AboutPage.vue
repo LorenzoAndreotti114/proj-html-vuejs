@@ -6,6 +6,7 @@
     import AboutTeam from '../components/AboutTeam.vue';
     import TestimonialCard from '../components/TestimonialCard.vue';
     import AppDoubleBanner from '../components/AppDoubleBanner.vue';
+    import AppTipsAndTricks from '../components/AppTipsAndTricks.vue';
 
    
     
@@ -19,6 +20,8 @@
              AboutTeam,
              TestimonialCard,
              AppDoubleBanner,
+             AppTipsAndTricks
+
         },
 
         data() {
@@ -83,7 +86,8 @@
                         image: 'https://avada.website/pet-supplies/wp-content/uploads/sites/139/2020/04/avatar-5-200x200.jpg', 
                         text:'blab lalbl allblalblal blalblsalb lalblslvlbldl alvlalcls blab lalbl allblalblal blalblsalb lalblslvlbldl alvlalcls' 
                     }
-                ]
+                ], 
+                
             }
         },
     }
@@ -114,10 +118,16 @@
             <TestimonialCard v-for="testimonial in testimonials" :key="testimonial.id" :testimonial="testimonial" />
         </div>
         
-                <!-- DOUBLE-BANNER-DOG/CAT -->
+        <!-- DOUBLE-BANNER-DOG/CAT -->
         <div class="double-banner">
             <AppDoubleBanner v-for="banner in doubleBannerArray" :key="banner.id" :doubleBannerArrays="banner"/>
         </div>
+
+        <!-- tips and tricks section -->
+        <AppTipsAndTricks />
+
+
+
         
 
 

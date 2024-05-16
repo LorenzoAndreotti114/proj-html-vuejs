@@ -6,7 +6,6 @@ export default {
             routes: [
                 { title: "Home", name: "/" },
                 { title: "About", name: "about-us" },
-                { title: "Blog", name: "blog" },
                 { title: "Contact", name: "contact" },
                 { title: "Shop", name: "shop" },
             ],
@@ -27,7 +26,7 @@ export default {
 </script>
 
 <template>
-    <footer class="footer">
+    <footer class="footer pt-5 pb-5">
         <div class="container">
             <!-- PRIMA PARTE DEL FOOTER -->
             <div class="row">
@@ -47,10 +46,11 @@ export default {
                 <div class="col-md-3">
                     <h2>Shop My Brand</h2>
                     <ul class="ps-0">
-                        <li class="pt-4">Bed</li>
-                        <li class="pt-3">Food</li>
-                        <li class="pt-3">Toys</li>
-                        <li class="pt-3">Transport</li>
+                        <!-- DA SOSTITUIRE CON ROUTER-LINK IN FUTURO -->
+                        <li class="pt-4"><a href="">Bed</a></li>
+                        <li class="pt-3"><a href="">Food</a></li>
+                        <li class="pt-3"><a href="">Toys</a></li>
+                        <li class="pt-3"><a href="">Transport</a></li>
                     </ul>
                 </div>
                 <!-- /Shop -->
@@ -58,20 +58,20 @@ export default {
                 <div class="col-md-3">
                     <h2>Useful Links</h2>
                     <ul class="ps-0">
-                        <li class="pt-4">My Account</li>
-                        <li class="pt-3">Orders</li>
-                        <li class="pt-3">Checkout</li>
-                        <li class="pt-3">Cart</li>
+                        <!-- DA SOSTITUIRE CON ROUTER-LINK IN FUTURO -->
+                        <li class="pt-4"><a href="">My account</a></li>
+                        <li class="pt-3"><a href="">Orders</a></li>
+                        <li class="pt-3"><a href="">Checkout</a></li>
+                        <li class="pt-3"><a href="">Cart</a></li>
                     </ul>
                 </div>
                 <!-- /Useful Links -->
                 <!-- Newsletter -->
                 <div class="col-md-3">
-                    <div class="card text-white" style="background-color: #273F29;">
-                        <div class="card-overlay" style="background-image: url('https://avada.website/pet-supplies/wp-content/uploads/sites/139/2020/04/bg-transparent-3.png');
-                                    background-size: cover;">
+                    <div class="card text-white">
+                        <div class="card-overlay">
                             <div class="card-body">
-                                <h3 class="pb-4">Subscribe to Our Newsletter ...*</h3>
+                                <h4 class="pb-4">Subscribe to Our Newsletter ...*</h4>
                                 <input type="email" class="form-control mb-2" placeholder="Insert your email">
                                 <button type="submit"> <strong>Subscribe</strong> </button>
                             </div>
@@ -83,7 +83,7 @@ export default {
             <!-- /PRIMA PARTE DEL FOOTER -->
             <hr>
             <!-- SECONDA PARTE DEL FOOTER -->
-            <div class="row">
+            <div class="row justify-content-center">
                 <div v-for="route in routes" :key="route.name" class="col-md-1 text-center">
                     <p>
                         <!-- Cambia con router-link -->
@@ -94,7 +94,7 @@ export default {
             <!-- /SECONDA PARTE DEL FOOTER -->
             <br>
             <!-- TERZA PARTE DEL FOOTER -->
-            <div class="row">
+            <div class="row justify-content-center">
                 <div v-for="socialMedia in socialMedia" :key="socialMedia.id" class="col-md-1 text-center">
                     <p>
                         <i :class="socialMedia.iconClass"></i>
@@ -114,7 +114,7 @@ export default {
             <div class="content has-text-centered">
                 <!-- Altri contenuti del footer -->
                 <button @click="scrollToTop" class="scroll-top-btn">
-                    <i class="fas fa-chevron-up"></i> <!-- Icona per tornare all'inizio -->
+                    <i class="fas fa-chevron-up"></i>
                 </button>
             </div>
         </div>
@@ -125,30 +125,44 @@ export default {
 
 
 <style scoped lang="scss">
-input,
-textarea {
-    border: none;
-    padding: 15px;
-    border-radius: 25px;
-    background-color: #f8f5f2;
+.card {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #273F29;
+
+    .card-overlay {
+        background-image: url('https://avada.website/pet-supplies/wp-content/uploads/sites/139/2020/04/bg-transparent-3.png');
+        background-size: cover;
+    }
 }
 
 .card-body {
+
     button {
+        width: 70%;
         background-color: #3d6f42;
         color: white;
         border: none;
         border-radius: 50px;
         font-size: 16px;
         cursor: pointer;
-        margin-top: 10px;
-        padding: 15px;
-        padding-left: 25px;
-        padding-right: 25px;
+        margin: 20px auto 0;
+        padding: 15px 25px;
+        display: block;
     }
+
 
     button:hover {
         background-color: #305732;
+    }
+
+    input {
+        margin: 0 auto;
+        width: 70%;
+        border: none;
+        padding: 15px;
+        border-radius: 25px;
+        background-color: #f8f5f2;
     }
 }
 
