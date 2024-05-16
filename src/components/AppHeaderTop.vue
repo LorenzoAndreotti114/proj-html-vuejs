@@ -38,6 +38,7 @@
             </div>
 
 
+
         </div>
  </div>
 
@@ -56,6 +57,8 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding: 2vw;
+    border-bottom: 1px solid lightgrey;
     }
 
     .logo {
