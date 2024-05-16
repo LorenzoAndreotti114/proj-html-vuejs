@@ -36,7 +36,7 @@ import { RouterLink } from 'vue-router';
         width: 100%;
         background-color: rgb(30, 49, 32);
         position: sticky;
-        top: 8%;
+        top: 7%;
         z-index: 100;
     }
 
