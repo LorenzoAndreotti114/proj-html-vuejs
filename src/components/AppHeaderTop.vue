@@ -49,7 +49,7 @@
 <style scoped>
     .header {
     background-color: #ffffff;
-    padding-top: 1%;
+    
     }
 
     .header-top {
@@ -57,7 +57,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 2vw;
+    padding: 1% 8%;
     border-bottom: 1px solid lightgrey;
     }
 
