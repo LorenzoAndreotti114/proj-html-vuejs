@@ -1,25 +1,17 @@
 <script>
-export default {
-  name: 'AppHeader',
-  props: {
-    routes: {
-      type: Array,
-      default: () => []
-    }
-  },
-}
+
 </script>
 
 <template>
 
 
       <!-- Header Bottom -->
-      <div class="header-bottom">
+    <div class="header-bottom">
 
-          <div class="header-bottom-background">
+        <div class="header-bottom-background">
             
-              <!-- feature 1 -->
-              <div class="feature">
+            <!-- feature 1 -->
+            <div class="feature">
 
                 <!-- globe icon -->
                 <i class="fas fa-globe"></i>
@@ -49,13 +41,13 @@ export default {
                 <!-- text -->
                 <span>We price match to give you the best deal</span>
 
-              </div>
+            </div>
 
-          </div>
+        </div>
 
-      </div>
+    </div>
 
-  </div>
+
 
 </template>
 

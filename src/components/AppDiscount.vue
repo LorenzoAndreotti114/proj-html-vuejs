@@ -34,7 +34,7 @@
         width: 100%;
         background-color: rgb(30, 49, 32);
         position: sticky;
-        top: 0;
+        top: 8%;
         z-index: 100;
     }
 

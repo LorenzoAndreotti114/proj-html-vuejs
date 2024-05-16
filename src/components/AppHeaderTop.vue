@@ -4,10 +4,10 @@
 
 <template>
 
-    <!-- Header container -->
+<!-- Header container -->
  <div class="header">
 
-<!-- Header top -->
+    <!-- Header top -->
       <div class="header-top"> 
 
         <!-- header logo -->

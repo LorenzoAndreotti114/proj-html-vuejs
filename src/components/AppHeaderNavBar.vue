@@ -35,6 +35,7 @@ export default {
 
     .nav-bar {
     margin-top: 10px;
+    background-color: white;
     }
 
     .nav-bar ul {
