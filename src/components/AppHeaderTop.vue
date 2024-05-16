@@ -5,39 +5,43 @@
 <template>
 
     <!-- Header container -->
-  <div class="header">
+ <div class="header">
 
 <!-- Header top -->
-<div class="header-top"> 
+      <div class="header-top"> 
 
-  <!-- header logo -->
-    <div class="logo">
-        <img src="../assets/img/logo.svg" alt="Logo">
-    </div>
+        <!-- header logo -->
+            <div class="logo">
+                <img src="../assets/img/logo.svg" alt="Logo">
+            </div>
 
-    <!-- header search bar -->
-    <div class="search-bar">
+            <!-- header search bar -->
+            <div class="search-bar">
 
-      <!-- search icon -->
-        <i class="fas fa-search"></i>
+              <!-- search icon -->
+                <i class="fas fa-search"></i>
 
-        <!-- search input -->
-        <input type="text" placeholder="Search...">
+                <!-- search input -->
+                <input type="text" placeholder="Search...">
 
-    </div>
+            </div>
 
-    <!-- contact info -->
-    <div class="contact-info">
-        <span><strong>Questions?</strong> Call us: 1.800.123.4567</span>
-    </div>
+            <!-- contact info -->
+            <div class="contact-info">
+                <span><strong>Questions?</strong> Call us: 1.800.123.4567</span>
+            </div>
 
-    <!-- user/cart icons -->
-    <div class="icons">
-        <i class="fas fa-shopping-cart"></i>
-        <i class="fas fa-user"></i>
-    </div>
+            <!-- user/cart icons -->
+            <div class="icons">
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-user"></i>
+            </div>
 
-</div>
+
+        </div>
+ </div>
+
+
 
 </template>
 
