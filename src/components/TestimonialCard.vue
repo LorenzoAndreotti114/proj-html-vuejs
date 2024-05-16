@@ -3,8 +3,7 @@ export default {
   name: 'TestimonialCard',
   props: {
     testimonial: {
-      type: Object,
-      required: true
+      type: Object,     
     }
   }
 }
