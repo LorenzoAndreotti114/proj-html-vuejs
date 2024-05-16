@@ -17,8 +17,8 @@
                     {
                         name: "Dog leash",
                         image: "02",
-                        onSale: false,
-                        discount: 0,
+                        onSale: true,
+                        discount: 30,
                         price: "25.00",
                     },
                     {
@@ -71,6 +71,8 @@
                 }
                 
             };
+
+            console.log(this.numAfterDiscount);
                 
         }
         
@@ -86,44 +88,49 @@
             <div class="inner-top">
 
                 <!-- TITLE -->
-                <div>New products arrival</div>
+                <div class="top-title">New products arrival</div>
 
                 <!-- SUBTITLE -->
-                <div>Latest products</div>
+                <div class="top-subtitle">Latest products</div>
 
             </div>
 
             <!-- CARD SECTION -->
             <div class="inner-bottom">
 
-                <div class="ms_card">
+                <div class="ms_card" v-for="(cards, index) in itemsArray">
 
                     <!-- IMG -->
                     <div class="img-container">
 
                         <!-- NO SALE -->
+                        <div><img :src="`../src/assets/img/new-product${cards.image}.jpg`" alt=""></div>
 
                         <!-- ON SALE -->
+                        <div v-if="cards.onSale === true" class="sale">Sale!</div>
 
                     </div>
 
                     <!-- TITLE -->
-                    <div class="title-bottom"></div>
+                    <div class="title-bottom"> {{ cards.name }} </div>
 
                     <!-- PRICE -->
-                    <div class="price-container">
+                    <div v-if="cards.onSale ? false : true" class="price-container">
 
-                        <div class="price"></div>
+                        <div class="price">${{ cards.price }} </div>
 
                     </div>
 
-                    <div class="price-container">
+                    <div v-else class="price-container">
 
-                        <div class="new-price"></div>
+                        <!-- NEW PRICE -->
+                        <div class="new-price">${{ numAfterDiscount[index - 1] }}</div>
 
-                        <div class="price-onsale"></div>
+                        <!-- PRICE NOT AVIABLE -->
+                        <div class="price-onsale">${{ cards.price }}</div>
 
-                        <div class="discount"></div>
+                        <!-- DISCOUNT -->
+                        <div class="discount"> {{ cards.discount }}%Off </div>
 
                     </div>
 
@@ -139,10 +146,16 @@
 
 <style scoped>
 
+    img {
+        height: 100%;
+        width: 100%;
+    }
+
     .ms_container {
         display: flex;
         justify-content: center;
         width: 100%;
+        padding: 5% 0;
     }
 
     .inner-container {
@@ -150,7 +163,6 @@
         flex-direction: column;
         justify-content: center;
         width: 80%;
-        border: 1px solid black;
     }
 
     .inner-top {
@@ -160,13 +172,78 @@
         width: 100%;
     }
 
+    .top-title {
+        font-size: 3vw;
+    }
+
+    .top-subtitle {
+        font-size: 1.2vw;
+    }
+
     .inner-bottom {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .ms_card {
+        width: 32%;
+        padding: 3% 0;
+    }
+
+    .img-container {
+       position: relative;
+    }
+
+    .sale {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        background-color: #3d6f42;
+        color: white;
+        border-radius: 100%;
+        padding: 3% 2%;
+    }
+
+    .title-bottom {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 3% 0;
+        font-size: 1.4vw;
+    }
+
+    .price-container {
+        width: 100%;
         display: flex;
         justify-content: center;
     }
 
-    .ms_card {
-        width: 30%;
+    .price {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .new-price {
+        display: flex;
+        align-items: start;
+    }
+
+    .price-onsale {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        text-decoration: line-through;
+        padding-left: 2.5%;
+    }
+
+    .discount {
+        margin-left: 5%;
+        color: white;
+        padding: 0 1%;
+        background-color: #3d6f42;
+        border-radius: 5px;
     }
 
 </style>
