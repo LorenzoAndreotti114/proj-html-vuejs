@@ -97,8 +97,7 @@
     .title {
         width: 100%;
         text-align: center;
-        font-size: 3vw;
-        padding-top: 6%;
+        font-size: 3vw; 
     }
 
     .subtitle {
@@ -120,6 +119,7 @@
 
     .ms_card {
         border: 1px solid gray;
+        border-radius: 5px;
         display: flex;
         flex-direction: column;
         align-items: start;
@@ -127,6 +127,13 @@
         width: 23%;
         height: 100%;
         padding: 1.5%;
+        transition-duration: 0.2s;
+    }
+
+    .ms_card:hover {
+        transform: scale(1.05);
+        border: 1px solid black;
+        background-color: rgba(204, 190, 145, 0.2);
     }
 
     .card-img {

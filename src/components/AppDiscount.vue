@@ -33,6 +33,9 @@
     .ms_container {
         width: 100%;
         background-color: rgb(30, 49, 32);
+        position: sticky;
+        top: 0;
+        z-index: 100;
     }
 
     .ms_inner-container {
@@ -44,7 +47,7 @@
     }
 
     .ms_img-container {
-        width: 14%;
+        width: 12%;
     }
 
     .ms_title {

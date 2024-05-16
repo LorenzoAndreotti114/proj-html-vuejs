@@ -1,5 +1,5 @@
 <script>
-    
+
 </script>
 
 <template>
@@ -17,7 +17,7 @@
                 <div class="ms_big-paragraph">We know animals are a part of your family, let us help take care of them.</div>
 
                 <!-- BUTTON -->
-                <div class="btn-container"><input type="button" class="btn" value="Learn more about us"></div>
+                <RouterLink to="/about-us" class="btn-container"><input type="button" class="btn" value="Learn more about us"></RouterLink>
                 
             </div>
 
@@ -81,6 +81,7 @@
 
     .btn:hover {
         background-color: #3d6f42;
+        color: white;
     }
 
 </style>

@@ -1,4 +1,6 @@
 <script>
+import { RouterLink } from 'vue-router';
+
     export default {
         data() {
             return {
@@ -23,7 +25,7 @@
                 <div class="subtitle">New arrivals weekly</div>
 
                 <!-- BUTTON -->
-                <div class="btn-container"><input type="button" value="Learn more about us" class="btn"></div>
+                <RouterLink to="/about-us" class="btn-container"><input type="button" value="Learn more about us" class="btn"></RouterLink>
 
             </div>
 
@@ -78,6 +80,7 @@
     justify-content: center;
     width: 100%;
     padding-top: 5%;
+    text-decoration: none;
  }
 
  .btn {
@@ -85,6 +88,10 @@
     border-radius: 50px;
     font-size: 1vw;
     padding: 1% 2%;
+ }
+
+ .btn:hover {
+   color: white;
  }
 
  .btn:hover {

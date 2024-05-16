@@ -71,6 +71,11 @@
         width: 30%;
         background-color: rgb(30, 49, 32);
         margin: 0 0.5%;
+        transition-duration: 0.2s;
+    }
+
+    .ms_background:hover {
+        transform: scale(1.03);
     }
 
     .ms_card {
