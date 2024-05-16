@@ -7,6 +7,7 @@ import AppNewProducts from '../components/AppNewProducts.vue';
 import AppNewProductsTitle from '../components/AppNewProductsTitle.vue';
 import AppBrowseCategory from '../components/AppBrowseCategory.vue';
 import AppDoubleBanner from '../components/AppDoubleBanner.vue';
+import AppShopNewArrivals from '../components/AppShopNewArrivals.vue'
 
     export default {
 
@@ -19,6 +20,7 @@ import AppDoubleBanner from '../components/AppDoubleBanner.vue';
             AppDogfoodCards,
             AppBrowseCategory,
             AppDoubleBanner,
+            AppShopNewArrivals,
         },
 
         data() {
@@ -246,6 +248,8 @@ import AppDoubleBanner from '../components/AppDoubleBanner.vue';
 
                 
         </div>
+
+        <AppShopNewArrivals />
 
         <AppBrowseCategory />
 
