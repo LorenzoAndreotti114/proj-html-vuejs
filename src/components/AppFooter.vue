@@ -87,7 +87,7 @@ export default {
             <hr>
             <!-- SECONDA PARTE DEL FOOTER -->
             <div class="row justify-content-center margin-top">
-                <div v-for="route in routes" :key="route.name" class="col-md-1 text-center bottom-links">
+                <div v-for="route in routes" :key="route.name" class="col-md-1 text-center bottom-links" @click="scrollToTop">
                     <p>
                         <!-- Cambia con router-link -->
                         <router-link :to="route.name">{{ route.title }}</router-link>
