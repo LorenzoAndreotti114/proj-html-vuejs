@@ -1,4 +1,6 @@
 <script>
+import { RouterLink } from 'vue-router';
+
 
 </script>
 
@@ -16,7 +18,7 @@
             <div class="ms_title">Get $25 OFF your first purchase of our homemade pet food!</div>
 
             <!-- LINK -->
-            <div class="ms_link">Visit the shop</div>
+            <RouterLink to="/shop" class="ms_link">Visit the shop</RouterLink>
 
         </div>
 
