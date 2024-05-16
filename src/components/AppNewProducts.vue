@@ -3,144 +3,73 @@
         data() {
             return {
 
-                numBeforeDiscount: "",
-                numAfterDiscount: [],
+                discountedPrice: this.itemsShopArray.price,
 
-                itemsArray: [
-                    {
-                        name: "Transport cage",
-                        image: "01",
-                        onSale: false,
-                        discount: 0,
-                        price: "25.00",
-                    },
-                    {
-                        name: "Dog leash",
-                        image: "02",
-                        onSale: true,
-                        discount: 30,
-                        price: "25.00",
-                    },
-                    {
-                        name: "Animal transport cage",
-                        image: "03",
-                        onSale: true,
-                        discount: 29,
-                        price: "35.00",
-                    },
-                    {
-                        name: "Colorful cat leash",
-                        image: "04",
-                        onSale: false,
-                        discount: 0,
-                        price: "12.00",
-                    },
-                    {
-                        name: "Animal transport cage",
-                        image: "05",
-                        onSale: false,
-                        discount: 0,
-                        price: "35.00",
-                    },
-                    {
-                        name: "Animal transport bag",
-                        image: "06",
-                        onSale: false,
-                        discount: 0,
-                        price: "29.00",
-                    },
-                ]
             }
         },
 
-        created() {
+        props:{
 
-            console.log("TEST");
+            itemsShopArray: Object,
 
-            for (let x = 0; x < this.itemsArray.length; x++) {
+        },
 
-                if ( this.itemsArray[x].onSale === true) {
+        created() {  
 
-                    this.numBeforeDiscount = parseInt(this.itemsArray[x].price);
+            this.faiLoSconto();     
 
-                    this.numAfterDiscount.push(this.numBeforeDiscount - ((this.numBeforeDiscount * this.itemsArray[x].discount) / 100));
+        },
+        methods:{
+            faiLoSconto(){
 
-                }
-                else {
-
-                }
+                this.discountedPrice = (this.itemsShopArray.price - ((this.itemsShopArray.price * this.itemsShopArray.discount) / 100));
                 
-            };
-
-            console.log(this.numAfterDiscount);
-                
+            }
         }
         
     }
 </script>
 
 <template>
-    
-    <div class="ms_container">
+
+    <!-- CARD SECTION -->
+    <div class="ms_card">
         
-        <div class="inner-container">
-            
-            <div class="inner-top">
+        <div class="img-container">
 
-                <!-- TITLE -->
-                <div class="top-title">New products arrival</div>
+            <img :src="` ../src/assets/img/new-product${itemsShopArray.image}.jpg `" alt="">
 
-                <!-- SUBTITLE -->
-                <div class="top-subtitle">Latest products</div>
+            <!-- ON SALE -->
+            <div v-if="itemsShopArray.onSale === true" class="sale">Sale!</div>
 
-            </div>
+        </div>
 
-            <!-- CARD SECTION -->
-            <div class="inner-bottom">
+        <!-- TITLE -->
+        <div class="title-bottom"> {{ itemsShopArray.name }} </div>
 
-                <div class="ms_card" v-for="(cards, index) in itemsArray">
+        <!-- PRICE -->
 
-                    <!-- IMG -->
-                    <div class="img-container">
+        <div v-if="itemsShopArray.onSale ? false : true" class="price-container">
 
-                        <!-- NO SALE -->
-                        <div><img :src="`../src/assets/img/new-product${cards.image}.jpg`" alt=""></div>
+            <div class="price">${{ itemsShopArray.price }} </div>
 
-                        <!-- ON SALE -->
-                        <div v-if="cards.onSale === true" class="sale">Sale!</div>
+        </div>
 
-                    </div>
+        <div v-else class="price-container">
 
-                    <!-- TITLE -->
-                    <div class="title-bottom"> {{ cards.name }} </div>
+            <!-- NEW PRICE -->
+            <div class="new-price">${{ discountedPrice }} </div>
 
-                    <!-- PRICE -->
-                    <div v-if="cards.onSale ? false : true" class="price-container">
+            <!-- PRICE NOT AVIABLE -->
+            <div class="price-onsale">${{ itemsShopArray.price }}</div>
 
-                        <div class="price">${{ cards.price }} </div>
-
-                    </div>
-
-                    <div v-else class="price-container">
-
-                        <!-- NEW PRICE -->
-                        <div class="new-price">${{ numAfterDiscount[index - 1] }}</div>
-
-                        <!-- PRICE NOT AVIABLE -->
-                        <div class="price-onsale">${{ cards.price }}</div>
-
-                        <!-- DISCOUNT -->
-                        <div class="discount"> {{ cards.discount }}%Off </div>
-
-                    </div>
-
-                </div>
-
-            </div>
+            <!-- DISCOUNT -->
+            <div class="discount"> {{ itemsShopArray.discount }}%Off </div>
 
         </div>
 
     </div>
+
 
 </template>
 
@@ -151,44 +80,11 @@
         width: 100%;
     }
 
-    .ms_container {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        padding: 5% 0;
-    }
-
-    .inner-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 80%;
-    }
-
-    .inner-top {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .top-title {
-        font-size: 3vw;
-    }
-
-    .top-subtitle {
-        font-size: 1.2vw;
-    }
-
-    .inner-bottom {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
     .ms_card {
-        width: 32%;
-        padding: 3% 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
     }
 
     .img-container {
@@ -217,6 +113,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        padding-bottom: 10%;
     }
 
     .price {

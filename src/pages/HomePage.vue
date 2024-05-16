@@ -10,6 +10,7 @@
     import AppDoubleBanner from '../components/AppDoubleBanner.vue';
     import AppIconsBanner from '../components/AppIconsBanner.vue';
     import AppNewProducts from '../components/AppNewProducts.vue';
+    import AppNewProductsTitle from '../components/AppNewProductsTitle.vue';
     import TestimonialCard from '../components/TestimonialCard.vue';
     import NewsLetter from '../components/NewsLetter.vue';
     
@@ -26,6 +27,7 @@
             AppTipsAndTricks,
             AppDoubleBanner,
             AppIconsBanner,
+            AppNewProductsTitle,
             AppNewProducts,
             TestimonialCard,
             NewsLetter,
@@ -72,8 +74,81 @@
                         image: 'https://avada.website/pet-supplies/wp-content/uploads/sites/139/2020/04/avatar-4-200x200.jpg', 
                         text: 'Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget tortor risus vestibulum ante ipsum.' 
                     },
+                ],
+
+                numBeforeDiscount: "",
+                numAfterDiscount: [],
+
+                productsArray: [
+                    {
+                        id: 1,
+                        name: "Transport cage",
+                        image: "01",
+                        onSale: false,
+                        discount: 0,
+                        price: "25.00",
+                    },
+                    {
+                        id: 2,
+                        name: "Dog leash",
+                        image: "02",
+                        onSale: true,
+                        discount: 30,
+                        price: "25.00",
+                    },
+                    {
+                        id: 3,
+                        name: "Animal transport cage",
+                        image: "03",
+                        onSale: true,
+                        discount: 29,
+                        price: "35.00",
+                    },
+                    {
+                        id: 4,
+                        name: "Colorful cat leash",
+                        image: "04",
+                        onSale: false,
+                        discount: 0,
+                        price: "12.00",
+                    },
+                    {
+                        id: 5,
+                        name: "Animal transport cage",
+                        image: "05",
+                        onSale: false,
+                        discount: 0,
+                        price: "35.00",
+                    },
+                    {
+                        id: 6,
+                        name: "Animal transport bag",
+                        image: "06",
+                        onSale: false,
+                        discount: 0,
+                        price: "29.00",
+                    },
                 ]
             }
+        },
+
+        created() {
+
+            for (let x = 0; x < this.productsArray.length; x++) {
+
+                if ( this.productsArray[x].onSale === true) {
+
+                    this.numBeforeDiscount = parseInt(this.productsArray[x].price);
+
+                    this.numAfterDiscount.push(this.numBeforeDiscount - ((this.numBeforeDiscount * this.productsArray[x].discount) / 100));
+
+                }
+                else {
+
+                }
+
+            };
+
         }
     }
 </script>
@@ -117,12 +192,26 @@
             <AppDoubleBanner v-for="banner in doubleBannerArray" :key="banner.id" :doubleBannerArrays="banner"/>
         </div>
         
-
         <!-- ICONS BANNER -->
         <AppIconsBanner />
 
         <!-- NEW PRODUCTS -->
-        <AppNewProducts />
+        <div class="new-products-container">
+
+            <AppNewProductsTitle />
+
+            <div  class="new-products-inner">
+
+                <div class="new-inner-inner" v-for="products in productsArray">
+
+                    <AppNewProducts :itemsShopArray="products"/>
+
+                </div>
+
+            </div>
+
+                
+        </div>
 
     </div>
 
@@ -158,6 +247,30 @@
     .double-banner {
         width: 100%;
         display: flex;
+    }
+
+    /* NEW PRODUCTS */
+    .new-products-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 5% 0;
+    }
+
+    .new-products-inner {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 5%;
+        border: 1px solid black;
+    }
+
+    .new-inner-inner {
+        width: 30%;
     }
 
 </style>
