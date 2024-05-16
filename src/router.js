@@ -19,9 +19,15 @@ export const router = createRouter({
             
         },
         {
+            path: "/shop",
+            name: "Shop",
+            component: ContactPage,
+        },
+        {
             path: "/contact",
             name: "Contact",
             component: ContactPage,
         },
+        
     ]
 })

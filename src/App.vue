@@ -15,7 +15,9 @@
         headerRoutes: [
         { title: "Home", name: "Home" },
         { title: "About", name: "About" },
+        { title: "Shop", name: "Shop" },
         { title: "Contact", name: "Contact" },
+        
       ]
         
       }
