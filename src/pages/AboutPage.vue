@@ -29,14 +29,14 @@
                     title: "Popular accessories",
                     subtitle: "FIND THE BEST ANIMAL SUPPLIES",
                     type: "toys accessories",
-                    image: "https://avada.website/pet-supplies/wp-content/uploads/sites/139/2020/04/banner-8@2x.jpg",
+                    image: "https://avada.website/pet-supplies/wp-content/uploads/sites/139/2020/04/banner-12@2x-scaled.jpg",
                 },
                 {
                     id: 2,
                     title: "New food arrivals",
                     subtitle: "FIND THE BEST FOOD",
                     type: "food products",
-                    image: "https://avada.website/pet-supplies/wp-content/uploads/sites/139/2020/04/banner-9@2x.jpg",
+                    image: "https://avada.website/pet-supplies/wp-content/uploads/sites/139/2020/04/banner-13@2x-scaled.jpg",
                 },
                 ],
 
@@ -125,6 +125,11 @@
 </template>
 
 <style>
+
+.double-banner {
+    display: flex;
+    width: 100%;
+}
 
 .testimonials-section, .testimonials-title {
     justify-content: center;
