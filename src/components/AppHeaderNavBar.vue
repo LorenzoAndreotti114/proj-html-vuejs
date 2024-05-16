@@ -7,6 +7,12 @@ export default {
       default: () => []
     }
   },
+
+  methods: {
+        scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    },
 }
 
 </script>
@@ -18,7 +24,7 @@ export default {
         <!-- router connected Navbar menu -->
         <ul>
         
-            <li v-for="route in routes" :key="route.name">
+            <li @click="scrollToTop" v-for="route in routes" :key="route.name">
 
                 <router-link :to="{ name: route.name }">{{ route.title }}</router-link>
             
