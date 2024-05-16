@@ -180,6 +180,7 @@ import { RouterLink } from 'vue-router';
         justify-content: end;
         height: 100%;
         width: 30%;
+        text-decoration: none;
     }
 
     .btn {

@@ -1,4 +1,6 @@
 <script>
+import { RouterLink } from 'vue-router';
+
     export default {
         data() {
             return {
@@ -45,7 +47,7 @@
         <!-- LITTLE CARDS -->
         <div class="ms_card-container">
 
-            <div class="ms_card" v-for="(Cards, index) in browseItems">
+            <RouterLink to="/shop" class="ms_card" v-for="(Cards, index) in browseItems">
                 
                 <!-- IMG -->
                 <div class="card-img"><img :src="Cards.image" alt=""></div>
@@ -58,7 +60,7 @@
                     <div class="upper-text"> {{ Cards.quantity }}</div>
                 </div>
 
-            </div>
+            </RouterLink>
 
         </div>
 
@@ -109,6 +111,8 @@
 
     .ms_card {
         width: 23%;
+        text-decoration: none;
+        color: black;
     }
 
     .card-img {
