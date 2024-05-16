@@ -1,4 +1,6 @@
 <script>
+import { RouterLink } from 'vue-router';
+
     export default {
 
         data() {
@@ -83,7 +85,7 @@
                 </div>
 
                 <!-- BTN -->
-                <div class="btn-container"><input type="button" value="View all products" class="btn"></div>
+                <RouterLink to="/shop" class="btn-container"><input type="button" value="View all products" class="btn"></RouterLink>
 
             </div>
 

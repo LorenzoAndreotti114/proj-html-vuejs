@@ -76,7 +76,6 @@
                     },
                 ],
 
-                numBeforeDiscount: "",
                 numAfterDiscount: [],
 
                 productsArray: [
@@ -266,7 +265,6 @@
         align-items: center;
         flex-wrap: wrap;
         margin-top: 5%;
-        border: 1px solid black;
     }
 
     .new-inner-inner {
